@@ -2,7 +2,7 @@ from tkinter import *
 from PIL import ImageTk, Image
 stu_manage = Tk()
 stu_manage.title('Student Management')
-stu_manage.geometry('400x600')
+stu_manage.geometry('400x520')
 
 #############################################
 
@@ -30,14 +30,50 @@ bsuimagebutlabel.pack(pady=40)
 
 #### divider
 divider = Frame(stuma_homeframe,bg="#221F4C",width=400,height=2)
-divider.place(y=346)
+divider.place(y=345)
 
 #### second header for the buttons
+studentmanagerframe = Frame(stuma_homeframe,bg="#221F4C")
+studentmanagerframe.place(width=400,height=40,y=350)
+stumana_label = Label(stuma_homeframe,text="| Student Manager",font=('Tahoma',15),bg="#221F4C",fg="#FFFFFF")
+stumana_label.place(x=15,y=355)
+
+#### white space + slight gray below second header
+homewhiteframe = Frame(stuma_homeframe,bg="#DBDBDB",width=400,height=300)
+homewhiteframe.place(y=390)
+homegrayframe = Frame(stuma_homeframe,bg="#FFFFFF",width=360,height=300)
+homegrayframe.place(x=20,y=390)
+
+#### HERE COME THE BUTTONS !!!! ####
+
+#### view all student records button
+hbt1 = Button(stuma_homeframe,text="View All Students Records.",font=('Roboto',13),fg="#FFFFFF",bg="#221F4C",
+                        command=lambda:switching_frames(all_stu_records),padx=45)
+hbt1.place(x=50,y=410)
+#### quit program button
+hbt2 = Button(stuma_homeframe,text="Quit Program.",font=('Roboto',13),fg="#FFFFFF",bg="#221F4C",
+                        command=stu_manage.destroy,padx=92)
+hbt2.place(x=50,y=460)
 
 #### placing home frame
 stuma_homeframe.place(x=0,y=0,width=400,height=600)
 
 #############################################
+
+#### VIEW ALL STUDENT RECORDS ####
+
+all_stu_records = Frame(bg="#FFFFFF")
+
+#### header
+sturecordsheader = Frame(all_stu_records,bg="#221F4C")
+sturecordsheader.place(width=400,height=40)
+title_label = Label(all_stu_records,text="| All Students Records",font=('Tahoma',15),bg="#221F4C",fg="#FFFFFF")
+title_label.place(x=15,y=4)
+
+#### entry so people could search names
+putname = Entry()
+
+all_stu_records.place(x=0,y=0,width=400,height=600)
 
 # Students Name
 # Students Number

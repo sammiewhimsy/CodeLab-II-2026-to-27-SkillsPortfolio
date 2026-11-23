@@ -11,10 +11,11 @@ heeeyyy i made this after some progress in exercise 1 and 2 !
 
 # EXERCISE 3
 1. design the GUI:
-    1. HOME FRAME
+    1. HOME FRAME 
         - logo first with thing
         - photo
         - list of buttons
+    # DONE !!!!!!!!!!!
     2. VIEW ALL STUDENT RECORDS FRAME
         - header
             - back button
