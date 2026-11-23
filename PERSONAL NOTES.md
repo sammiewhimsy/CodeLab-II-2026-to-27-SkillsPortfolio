@@ -71,3 +71,31 @@ def show_random_joke():
 
 
 # EXERCISE 3 - STUDENT MANAGEMENT THING
+1. https://www.geeksforgeeks.org/python/read-a-text-file-using-python-tkinter/ 
+
+# SCRAPS:
+
+#def thestudentinfo():
+    #with open('studentMarks.txt', 'r') as studentinformation:
+        #recordcontents = studentinformation.read()
+        #print(recordcontents)
+    #sturecordshere = open("studentMarks.txt",'r')
+    #sturec2 = sturecordshere.read()
+    #stu_info_label.config(sturec2)
+   #with open('studentMarks.txt','r') as studentinformation: 
+           # recordcontents = studentinformation.read()
+            #stu_info_label.config(text=recordcontents)
+#stu_info_label = Label(text=thestudentinfo,font=('Tahoma',12),wraplength=290,bg="#000000",justify="left")
+#stu_info_label.place(x=55,y=195)
+
+
+#text_widget = Text(all_stu_records, wrap="word", width=47, height=10)
+#text_widget.place(x=10,y=90)
+#readmytxtdude = "studentMarks.txt"
+#def studentinformation():
+#    try:
+#        with open(readmytxtdude, "r", encoding="utf-8") as stuinfoyay:
+#            recordcontents = stuinfoyay.read()
+#        text_widget.insert("1.0", recordcontents)
+#    except FileNotFoundError:
+#        pass

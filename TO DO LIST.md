@@ -15,9 +15,10 @@ heeeyyy i made this after some progress in exercise 1 and 2 !
         - logo first with thing
         - photo
         - list of buttons
-    # DONE !!!!!!!!!!!
+    # DONE !!!!!!!!!!! FOR ALL!!!!!!!!!!!!!
     2. VIEW ALL STUDENT RECORDS FRAME
-        - header
+        - header 
+        # DONE !!!!!!!!!!!!!!
             - back button
             - buttons to the other things
         - below header like header 2.0 idk how to explain: "All Student Records"

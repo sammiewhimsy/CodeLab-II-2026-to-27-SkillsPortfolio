@@ -9,6 +9,11 @@ stu_manage.geometry('400x520')
 def switching_frames(frame):
     frame.tkraise()
 
+def studentinfo(): # this is for when pressing the button so the text appears in that other frame because i don't know how to execute it
+    with open('studentMarks.txt','r') as THELISTOAT: 
+            allstuinfoyay = THELISTOAT.read()
+            stuinfo_here.config(text=allstuinfoyay)
+
 #############################################
 
 #### HOME FRAME ####
@@ -48,7 +53,7 @@ homegrayframe.place(x=20,y=390)
 
 #### view all student records button
 hbt1 = Button(stuma_homeframe,text="View All Students Records.",font=('Roboto',13),fg="#FFFFFF",bg="#221F4C",
-                        command=lambda:switching_frames(all_stu_records),padx=45)
+                command=lambda:[switching_frames(all_stu_records),studentinfo],padx=45)
 hbt1.place(x=50,y=410)
 #### quit program button
 hbt2 = Button(stuma_homeframe,text="Quit Program.",font=('Roboto',13),fg="#FFFFFF",bg="#221F4C",
@@ -71,7 +76,23 @@ title_label = Label(all_stu_records,text="| All Students Records",font=('Tahoma'
 title_label.place(x=15,y=4)
 
 #### entry so people could search names
-putname = Entry()
+sturecordentryframe = Frame(all_stu_records,bg="#58587B")
+sturecordentryframe.place(width=400,height=40,y=40)
+putnamelabel = Label(all_stu_records,text="| Search Name :",font=('Tahoma',13),bg="#58587B",fg="#FFFFFF")
+putnamelabel.place(x=40,y=45)
+putname = Entry(all_stu_records,font=('Tahoma',13),fg="#000000")
+putname.grid(padx=(175,0),pady=47,columnspan=5)
+
+#### divider
+divider = Frame(all_stu_records,bg="#221F4C",width=400,height=2)
+divider.place(y=82)
+
+#### highest to lowest grade AND lowest to highest grade
+
+#### student information
+
+stuinfo_here = Label(all_stu_records,text="",font=('Tahoma',12),wraplength=290,bg="#CBCBCB",justify="left")
+stuinfo_here.place(x=55,y=195)
 
 all_stu_records.place(x=0,y=0,width=400,height=600)
 
