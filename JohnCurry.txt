@@ -1,0 +1,6 @@
+John Curry's Student Records
+
+--------------------------------------
+
+- 1345 | John Curry
+Exam Marks: 8, 15, 7, 45 = 75% | A

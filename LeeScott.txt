@@ -1,0 +1,6 @@
+Lee Scott's Student Records
+
+--------------------------------------
+
+- 9876 | Lee Scott
+Exam Marks: 17, 11, 16, 99 = 143% | A

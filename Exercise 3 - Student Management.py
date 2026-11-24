@@ -111,8 +111,73 @@ sturecordentryframe.place(width=400,height=40,y=40)
 putnamelabel = Label(all_stu_records,text="| Search Name :",
                      font=('Tahoma',13),bg="#58587B",fg="#FFFFFF")
 putnamelabel.place(x=40,y=45)
-putname = Entry(all_stu_records,font=('Tahoma',13),fg="#000000")
-putname.grid(padx=(175,0),pady=47,columnspan=5)
+
+def selectedname(studentchoice):
+    textwidi.delete("1.0",END)
+    if studentchoice == "John Curry":
+        with open("JohnCurry.txt",'r') as individualstudent:
+                studentinfo = individualstudent.read()
+                textwidi.insert("1.0",studentinfo)
+    elif studentchoice == "Sam Sturivant":
+        with open("SamSturivant.txt",'r') as individualstudent:
+                studentinfo = individualstudent.read()
+                textwidi.insert("1.0",studentinfo)
+    elif studentchoice == "Lee Scott":
+            with open("LeeScott.txt",'r') as individualstudent:
+                    studentinfo = individualstudent.read()
+                    textwidi.insert("1.0",studentinfo)
+    elif studentchoice == "Matt Thompson":
+            with open("MattThompson.txt",'r') as individualstudent:
+                    studentinfo = individualstudent.read()
+                    textwidi.insert("1.0",studentinfo)
+    elif studentchoice == "Ron Herrema":
+            with open("RonHerrema.txt",'r') as individualstudent:
+                    studentinfo = individualstudent.read()
+                    textwidi.insert("1.0",studentinfo)
+    elif studentchoice == "Jake Hobbs":
+            with open("JakeHobbs.txt",'r') as individualstudent:
+                    studentinfo = individualstudent.read()
+                    textwidi.insert("1.0",studentinfo)
+    elif studentchoice == "Jo Hyde":
+            with open("JoHyde.txt",'r') as individualstudent:
+                    studentinfo = individualstudent.read()
+                    textwidi.insert("1.0",studentinfo)
+    elif studentchoice == "Gareth Southgate":
+            with open("GarethSouthgate.txt",'r') as individualstudent:
+                    studentinfo = individualstudent.read()
+                    textwidi.insert("1.0",studentinfo)
+    elif studentchoice == "Alan Shearer":
+            with open("AlanShearer.txt",'r') as individualstudent:
+                    studentinfo = individualstudent.read()
+                    textwidi.insert("1.0",studentinfo)
+    elif studentchoice == "Les Ferdinand":
+            with open("LesFerdinand.txt",'r') as individualstudent:
+                    studentinfo = individualstudent.read()
+                    textwidi.insert("1.0",studentinfo)
+
+nameslistchoice = [
+    "John Curry",
+    "Sam Sturivant",
+    "Lee Scott",
+    "Matt Thompson",
+    "Ron Herrema",
+    "Jake Hobbs",
+    "Jo Hyde",
+    "Gareth Southgate",
+    "Alan Shearer",
+    "Les Ferdinand"
+    ]
+
+choiceclicked = StringVar()
+choiceclicked.set(nameslistchoice[0])
+
+nameslistdrop = OptionMenu(all_stu_records,choiceclicked, *nameslistchoice,command=selectedname)
+nameslistdrop.config(font=('Tahoma',10),fg="#FFFFFF",bg="#58587B",padx=40)
+nameslistdrop.place(x=175,y=44)
+
+
+#putname = Entry(all_stu_records,font=('Tahoma',13),fg="#000000")
+#putname.grid(padx=(175,0),pady=47,columnspan=5)
 
 #### divider
 divider = Frame(all_stu_records,bg="#221F4C",width=400,height=2)
