@@ -99,3 +99,6 @@ def show_random_joke():
 #        text_widget.insert("1.0", recordcontents)
 #    except FileNotFoundError:
 #        pass
+
+
+https://tkdocs.com/tutorial/text.html 

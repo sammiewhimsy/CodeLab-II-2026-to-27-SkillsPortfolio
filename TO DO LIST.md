@@ -20,8 +20,10 @@ heeeyyy i made this after some progress in exercise 1 and 2 !
         - header 
         # DONE !!!!!!!!!!!!!!
             - back button
+        # DONE
             - buttons to the other things
         - below header like header 2.0 idk how to explain: "All Student Records"
+        # DONE
         - then there would be the record for students and the class (put borders and stuff yay)
     3. VIEW INDIVIDUAL STUDENT RECORD
         - i think i'd like to add something to search for the students' names,
@@ -30,3 +32,4 @@ heeeyyy i made this after some progress in exercise 1 and 2 !
     4. HIGHEST AND LOWEST RANKING
         - ok so like this should probably be above as well (maybe even next to the user input thing for the names or something like that)
         - cuz it has to be the same format as NUMBER#2
+    5. OTHERS UHHHHHHHHHHHH
