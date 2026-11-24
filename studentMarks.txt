@@ -1,11 +1,33 @@
-10
-1345, John Curry, 8, 15, 7, 45
-2345, Sam Sturtivant, 14, 15, 14, 77
-9876, Lee Scott, 17, 11, 16, 99
-3724, Matt Thompson, 19, 11, 15, 81
-1212, Ron Herrema, 14, 17, 18, 66
-8439, Jake Hobbs, 10, 11, 10, 43
-2344, Jo Hyde, 6, 15, 10, 55
-9384, Gareth Southgate, 5, 6, 8, 33
-8327, Alan Shearer, 20, 20, 20, 100
-2983, Les Ferdinand, 15, 17, 18, 92
+All Students Records:
+
+--------------------------------------
+
+- 1345 | John Curry
+Exam Marks: 8, 15, 7, 45 = 75% | A
+
+- 2345 | Sam Sturtivant
+Exam Marks: 14, 15, 14, 77 = 121% | A
+
+- 9876 | Lee Scott
+Exam Marks: 17, 11, 16, 99 = 143% | A
+
+- 3724 | Matt Thompson
+Exam Marks: 19, 11, 15, 81 = 126% | A
+
+- 1212 | Ron Herrema
+Exam Marks: 14, 17, 18, 66 = 115% | A
+
+- 8439 | Jake Hobbs
+Exam Marks: 10, 11, 10, 43 = 74% | A
+
+- 2344 | Jo Hyde
+Exam Marks: 6, 15, 10, 55 = 86% | A
+
+- 9384 | Gareth Southgate 
+Exam Marks: 5, 6, 8, 33 = 52% | C
+
+- 8327 | Alan Shearer 
+Exam Marks: 20, 20, 20, 100 = 160 | A
+
+- 2983 | Les Ferdinand
+Exam Marks: 15, 17, 18, 92 = 142% | A

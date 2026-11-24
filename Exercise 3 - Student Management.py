@@ -18,9 +18,24 @@ def switching_frames(frame):
 def studentinfo():
     with open("studentMarks.txt",'r') as THELISTOAT:
         allstuinfoyay = THELISTOAT.read()
+        textwidi.delete("1.0",END)
         textwidi.insert(END,allstuinfoyay)
-        showlistbt.config(state=DISABLED)
-        textwidi.config(state=DISABLED)
+        #showlistbt.config(state=DISABLED)
+        #textwidi.config(state=DISABLED)
+
+def highmarksinfo():
+    with open("highestMarks.txt",'r') as thehighmarks:
+        highmarkshere = thehighmarks.read()
+        #textwidi.config(text="")
+        textwidi.delete("1.0",END)
+        textwidi.insert(END,highmarkshere)
+
+def lowmarksinfo():
+    with open("lowestMarks.txt",'r') as thelowmarks:
+        lowmarkshere = thelowmarks.read()
+        #textwidi.config(text="")
+        textwidi.delete("1.0",END)
+        textwidi.insert(END,lowmarkshere)
 
 ####################################################################################
 
@@ -113,6 +128,14 @@ showlistbt = Button(all_stu_records,font=('Tahoma',13),
                     text="Show All Students Records",bg="#221F4C",
                     fg="#FFFFFF",command=studentinfo)
 showlistbt.place(x=10,y=90)
+highmarksbt = Button(all_stu_records,font=('Tahoma',13),
+                    text="↑",bg="#221F4C",padx=10,
+                    fg="#FFFFFF",command=highmarksinfo)
+highmarksbt.place(x=290,y=90)
+lowmarksbt = Button(all_stu_records,font=('Tahoma',13),
+                    text="↓",bg="#221F4C",padx=10,
+                    fg="#FFFFFF",command=lowmarksinfo)
+lowmarksbt.place(x=340,y=90)
 
 #### gray frame
 homewhiteframe = Frame(all_stu_records,bg="#DBDBDB",width=400,height=390)
@@ -127,7 +150,6 @@ homegrayframe.place(x=20,y=134)
 textwidi = Text(all_stu_records,width=40,height=20,
                 bg="#FFFFFF",font=('Tahoma',12),wrap="word",
                 fg="#221F4C",borderwidth=0)
-#textwidi.config(state=DISABLED)
 textwidi.place(x=20,y=134)
 # stuinfo_here = Label(all_stu_records,text="",font=('Tahoma',12),
                      #wraplength=290,justify="left",
